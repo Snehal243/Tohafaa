@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:padding="15dp"
+    android:background="@drawable/background"
+    android:scaleType="fitXY">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:background="#ddffffff"
+        android:visibility="visible"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@android:color/transparent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"></LinearLayout>
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/tohafaa_logo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/TOHAFAA_REGISTRATION"
+            android:textColor="#FF00"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="5dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:visibility="visible"
+                    android:id="@+id/upload_img"
+                    android:layout_marginRight="15dp">
+                        <ImageView
+                            android:id="@+id/imageView"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/ic_linked_camera_black_24dp"
+                            android:background="@drawable/button_bg_transparent"
+                            android:visibility="visible"
+                            android:padding="5dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@+id/imageView"
+                            android:layout_alignRight="@+id/imageView"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:text="Add Image"
+                            android:textAppearance="?android:attr/ratingBarStyleSmall"
+                            android:textColor="#000000"
+                            android:textSize="13dp" />
+                 </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false"
+                    >
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:id="@+id/firstinputlayout"
+                        android:textColorHint="@color/colorHint"
+                        android:textSize="17sp">
+
+                        <EditText
+                            android:id="@+id/edtx_firstname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:hint="@string/FirstName"
+                            android:textSize="12sp" />
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:id="@+id/lastinputlayout"
+                        android:textColorHint="@color/colorHint"
+                        android:textSize="17sp"
+                        >
+                        <EditText android:id="@+id/edtx_lastname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/lastname"
+                            android:textSize="12sp"
+                            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:id="@+id/emailinputlayout"
+                android:textColorHint="@color/colorHint"
+                >
+
+                <EditText android:id="@+id/edtx_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:hint="@string/Email"
+                    android:textSize="12sp"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:id="@+id/mobileinputlayout"
+                android:textColorHint="@color/colorHint">
+
+                <EditText android:id="@+id/edtx_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:textSize="12sp"
+                    android:hint="@string/Mobile"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/passwordinputlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:textColorHint="@color/colorHint"
+                    app:passwordToggleEnabled="true"
+                  >
+
+                    <EditText
+                        android:id="@+id/edtx_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/Password"
+                        android:inputType="textPassword"
+                        android:textSize="12sp"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:id="@+id/cnfpasswordinputlayout"
+                android:textColorHint="@color/colorHint"
+                app:passwordToggleEnabled="true">
+
+                <EditText android:id="@+id/edtx_cnfpassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:hint="@string/ConfPassword"
+                    android:textSize="12sp"/>
+            </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/pincode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="8dp"
+                    android:id="@+id/pincodeinputlayout"
+                    android:textColorHint="@color/colorHint">
+
+                    <EditText
+                        android:id="@+id/edtx_pincode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Pincode"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:textSize="12sp"/>
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:id="@+id/address1inputlayout"
+                android:textColorHint="@color/colorHint">
+
+                <EditText android:id="@+id/edtx_addressline1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:hint="@string/addressline1"
+                    android:textSize="12sp"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:id="@+id/address2inputlayout"
+                android:textColorHint="@color/colorHint">
+
+                <EditText android:id="@+id/edtx_addressline2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:hint="@string/addressline2"
+                    android:textSize="12sp"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Spinner"
+                android:orientation="vertical">
+                <Spinner
+                    android:id="@+id/spin_country"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    />
+                   <Spinner
+                    android:id="@+id/spin_State"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    />
+                    <Spinner
+                        android:id="@+id/spin_City_District_Town"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        />
+            </LinearLayout>
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_signup"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="15dp"
+                android:padding="12dp"
+                android:text="@string/btn_sign_up"
+                android:background="@color/colorAccent"/>
+
+            <TextView android:id="@+id/link_login"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:text="@string/link_login"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:textColor="@color/colorHint"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

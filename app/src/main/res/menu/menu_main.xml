@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   >
+    <item android:id="@+id/action_search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="action_search"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="ifRoom|collapseActionView" />
+    <item android:id="@+id/action_cart"
+        app:actionLayout="@layout/actionbar_badge_layoutforcart"
+        android:title="Cart"
+        app:showAsAction="ifRoom" />
+    <item android:id="@+id/action_wishlist"
+        app:actionLayout="@layout/actionbar_badge_layout"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_favorite_border_white_24dp"
+        android:title="WishList" />
+
+
+</menu>

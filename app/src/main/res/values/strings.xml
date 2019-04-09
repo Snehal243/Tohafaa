@@ -1,0 +1,91 @@
+<resources>
+    <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="app_name">Tohafaa</string>
+    <string name="facebook_app_id">544590025915530</string>
+    <string name="btn_sign_up">signup</string>
+    <string name="FirstName">First Name</string>
+    <string name="link_login">Already registered? Login</string>
+    <string name="TOHAFAA">TOHAFAA LOGIN</string>
+    <string name="lastname">Last Name</string>
+    <string name="Email">Email</string>
+    <string name="Mobile">Mobile</string>
+    <string name="Password">Password</string>
+    <string name="ConfPassword">Confirm Password</string>
+    <string name="addressline1">Address Line 1</string>
+    <string name="addressline2">Address Line 2</string>
+    <string name="btn_login">Login</string>
+    <string name="TOHAFAA_REGISTRATION">TOHAFAA REGISTRATION</string>
+    <string name="price">Price : </string>
+    <string name="filter">Filter</string>
+    <string name="description">Description</string>
+    <string name="reviews">Reviews</string>
+    <string name="descriptionp">Product Description</string>
+    <string name="add_cart">ADD TO CART</string>
+    <string name="BUY_NOW">BUY NOW</string>
+    <string name="rating">Rating : </string>
+    <string name="Product_Code">Product Code :  </string>
+    <string name="shipping_cost">Shipping Cost :</string>
+    <string name="Quantity">Quantity </string>
+    <string name="addreview">Your Review</string>
+    <string name="Pincode">Pincode</string>
+    <string name="check">Check</string>
+    <string name="checkout">CHECKOUT</string>
+    <string name="emptycart">Empty Cart</string>
+    <string name="Shipping_Address">Shipping Address :</string>
+    <string name="address1">Shipping Address same as Billing Address</string>
+    <string name="ContinueShopping">CONTINUE SHOPPING</string>
+    <string name="ReviewTitle">Review Title</string>
+    <string name="WriteReview">Write Review</string>
+    <string name="Done">Done</string>
+    <string name="Cancel">Cancel</string>
+    <string name="tnc">Terms and Conditions</string>
+
+    <string name="html">
+        <![CDATA[
+        <h1><p>By using this site the user has unconditionally accepted the terms and conditions of use as given hereunder and/or elsewhere in the site.</p></h1>
+        <h2><p>1.The user may carefully read all the information on products and services as provided in relevant sections.</p></h2>
+        <h2><p>2.For Flowers, Cakes and other perishable items, the delivery would be attempted only once. If the delivery is not executed during that attempt due to incorrect or insufficient address, recipient not at home, address found locked or refusal to accept, the customer shall still be charged for the order. No refunds would be entertained for such items.</p></h2>
+        <h2><p>3.All products and flower arrangements are sub. to availability. In the case of any supply related difficulty, we reserve or have the right to replace the product with a substitute of equal value & quality with no notice.</p></h2>
+        <h2><p>4.Since flower arrang. are hand-made, there may be a slight variation from the picture shown. However we will make sure that we deliver the flower arrangement as close as possible to the description/ photograph shown.</p></h2>
+        <h2><p>5.For Cakes, Express Deliveries will be made on   the same day for orders received till 4 PM IST unless delivery date is mentioned. We will attempt delivery of the items once. In case the delivery is not executed during the attempt, due to wrong address / recipient not available / premises locked, the customer will be charged for the order. The image displayed is indicative in nature, actual product may vary in design as per availability.</p></h2>
+        <h2><p>6.In handicrafts items, product specific mentioned with the product photos are only approximate. There may be a variation in the pictures and the respective products.</p></h2>
+        <h2><p>7.The Prices advertised on this Site are for online orders.Prices and the availability of items are subject to change without notice. Any prices used on this Site may not be indicative of the actual selling prices in your area. We reserve the right to limit sales, including the right to prohibit sales to re-sellers. We are not responsible for typographical or photographic errors.</p></h2>
+        <h2><p>8.If the user has any question, doubts , confusion in regard to any of the terms & conditions set out herein he should seek clarifications from us through Email:info@tohafaa.com and should wait for a written clarification before using the service.</p></h2>
+        <h2><p>9.We may contact you via email,phone, fax & mail. We may use this contact information to customize the website/app according to your interests.We may contact you via email,facsimile,phone or text message to deliver certain services or information you have requested.</p></h2>
+]]>
+    </string>
+    <string name="CartTotals">Cart Totals :- </string>
+    <string name="CartSubtotal">Cart Subtotal</string>
+    <string name="ShippingandHandling">Shipping and Handling</string>
+    <string name="OrderTotal">Order Total</string>
+    <string name="Submit">SUBMIT</string>
+    <string name="ResendOTP">Resend OTP</string>
+    <string name="name">Name</string>
+    <string name="address">Address</string>
+    <string name="remark">Remark</string>
+    <string name="skip">skip</string>
+    <string name="BILLINGDETAILS">BILLING DETAILS</string>
+    <string name="SelectSize">Select Size</string>
+    <string name="Selectcolor">Select Color</string>
+    <string name="UploadImage">Upload Image</string>
+    <string name="ORDERSUMMARY">ORDER SUMMARY</string>
+    <string name="rbt_Bhim">BHIM</string>
+    <string name="rbt_paytm">Paytm</string>
+    <string name="rbl_Mobikwik">Mobikwik</string>
+    <string name="PAYMENTOPTIONS">PAYMENT OPTIONS</string>
+    <string name="rbt_payonline">Pay Online</string>
+    <string name="zero">0</string>
+    <string name="Subject">Subject</string>
+    <string name="EnquiryDetails">Enquiry Details</string>
+    <string name="order_id">Order ID</string>
+    <string name="Date">Date</string>
+    <string name="Total">Total</string>
+    <string name="status">Status</string>
+    <string name="Action">Action</string>
+    <string name="IFSCCode">IFSC Code</string>
+    <string name="BankName">Bank Name</string>
+    <string name="BranchName">Branch Name</string>
+    <string name="AccountNumber">Account Number</string>
+    <string name="exchange">Exchange</string>
+
+</resources>

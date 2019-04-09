@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Filter"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:textSize="17dp"
+        android:background="@color/colorPrimary"/>
+                <include
+                    android:id="@+id/priceinclude"
+                    layout="@layout/activity_pricespinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+        <LinearLayout
+            android:id="@+id/footerlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginTop="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/btn_ApplyFilters"
+                android:layout_width="0dip"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:text="Apply Filters" />
+
+            <Button
+                android:id="@+id/btn_Clear"
+                android:layout_width="0dip"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:padding="10dp"
+                android:layout_marginLeft="1dp"
+                android:text="Clear All"
+                android:visibility="gone"/>
+        </LinearLayout>
+</LinearLayout>

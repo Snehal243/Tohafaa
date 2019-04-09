@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="7dp">
+
+    <TextView
+        android:id="@+id/txv_reason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select the reason for cancellation:"
+        android:textColor="@color/colorHint"
+        android:textSize="14dp"
+        android:layout_marginTop="3dp"/>
+
+    <View
+        android:id="@+id/view11"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorHint"
+        />
+    <TextView
+        android:id="@+id/txv_terms2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:text="(We do not accept any product without original packaging and accessories or due to wrong address / recipient not available / premises locked)"/>
+
+    <TextView
+        android:id="@+id/txv_terms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select the reason for cancellation:"
+        android:textColor="@color/colorHint"
+        android:textSize="16dp"
+        android:layout_marginTop="15dp"
+        android:visibility="gone"/>
+
+    <ListView
+        android:id="@+id/list"
+        android:cacheColorHint="#00000000"
+        android:scrollbars="vertical"
+        android:fadingEdge="vertical"
+        android:soundEffectsEnabled="true"
+        android:dividerHeight="1px"
+        android:padding="5dip"
+        android:smoothScrollbar="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <ScrollView
+        android:id="@+id/scrollbar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical"
+        android:padding="0dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bank Account Details"
+                android:textColor="@color/colorPrimary"
+                android:padding="7dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="14dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="(Refund after 10 working days from the date of cancellation of the order.)"
+                android:textColor="@color/stay_color"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:visibility="visible"/>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/stay_color"
+                android:visibility="visible"/>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                >
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="4dp"
+                    android:id="@+id/IFSCCodeinputlayout"
+                    android:textColorHint="@color/colorHint"
+                    android:textSize="12sp">
+
+                    <EditText android:id="@+id/edtx_ifsccode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/IFSCCode"
+                        android:textSize="12sp"
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:id="@+id/BankNameinputlayout"
+                    android:textColorHint="@color/colorHint"
+                    android:textSize="12sp"
+                    >
+                    <EditText android:id="@+id/edtx_bankname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/BankName"
+                        android:textSize="12sp"
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                >
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/BranchNameinputlayout"
+                    android:textColorHint="@color/colorHint"
+                    android:textSize="12sp"
+                    >
+
+                    <EditText android:id="@+id/edtx_branchname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/BranchName"
+                        android:textSize="12sp"/>
+                  </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="5dp"
+                        android:textSize="12sp"
+                        android:id="@+id/AccountHolderinputlayout"
+                        android:textColorHint="@color/colorHint">
+
+                        <EditText
+                            android:id="@+id/edtx_AccountHolder"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                            android:hint="Account Holder"
+                            android:textSize="12sp"/>
+                    </android.support.design.widget.TextInputLayout>
+
+              </LinearLayout>
+
+              <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                >
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="12sp"
+                    android:id="@+id/AccountNumberinputlayout"
+                    android:textColorHint="@color/colorHint">
+
+                    <EditText android:id="@+id/edtx_AccountNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/AccountNumber"
+                        android:textSize="12sp"/>
+                </android.support.design.widget.TextInputLayout>
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:textSize="12sp"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/ConfirmAccountinputlayout"
+                    android:textColorHint="@color/colorHint">
+
+                    <EditText android:id="@+id/edtx_ConfirmAccountNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Confirm Account Number"
+                        android:textSize="12sp"
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+              </LinearLayout>
+
+              <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                  android:textSize="12sp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/PhoneNumberinputlayout"
+                android:textColorHint="@color/colorHint">
+
+                  <EditText android:id="@+id/edtx_PhoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="@string/Mobile"
+                    android:maxLength="10"
+                    android:textSize="12sp"
+                    />
+               </android.support.design.widget.TextInputLayout>
+
+               <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginTop="15dp">
+
+                    <Button
+                        android:id="@+id/btn_submit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="@string/Submit"
+                        android:textColor="@color/white"
+                        android:background="@color/colorPrimary"/>
+
+                </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

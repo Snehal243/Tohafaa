@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:padding="5dp"
+                  android:orientation="horizontal"
+                  android:weightSum="3">
+         <ImageView
+               android:id="@+id/image_wishlist"
+               android:layout_width="0dp"
+               android:layout_height="80dp"
+               android:layout_weight="1"
+               android:layout_gravity="center_vertical"  />
+
+
+        <LinearLayout  android:id="@+id/layout_item_desc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1.8"
+            android:layout_marginLeft="10dp">
+            <TextView android:id="@+id/txv_name"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Denim Shirtdddddddddddddddddddd"
+                      android:textSize="14sp"
+                      android:textStyle="bold"/>
+            <TextView android:id="@+id/txv_price"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="1200"
+                      android:textSize="12sp"
+                      android:layout_marginTop="5dp"
+                      android:drawableLeft="@drawable/ic_rupee_indian"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/qtylayout">
+                <TextView
+                    android:id="@+id/qty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Qty : "
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/txv_qty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Qty : "
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    />
+                <Spinner
+                    android:id="@+id/spinner1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:visibility="gone"/>
+            </LinearLayout>
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height=""></LinearLayout>-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView android:id="@+id/img_delete"
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:text="Remove"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_delete_black_24dp"/>
+
+            <ImageView android:id="@+id/img_cart"
+                android:layout_width="25dp"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3dp"
+                android:src="@android:drawable/ic_menu_edit"/>
+
+        </LinearLayout>
+       </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <View android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/grey_light"/>
+</LinearLayout>
+

@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@color/colorPrimary"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/txv_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Shipping_Address"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/txv_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Shipping_Address"
+                    android:textColor="@color/white"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/grey_light" />
+
+            <LinearLayout
+                android:id="@+id/li_chechbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Shipping_Address"
+                android:textColor="@color/colorHint" />
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/address1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/li_billingaddress"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="3dp"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="BILLING ADDRESS"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/txv_billingaddressupicon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:drawableLeft="@android:drawable/arrow_up_float"
+                    android:padding="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/txv_billingaddressdownicon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:drawableLeft="@android:drawable/arrow_down_float"
+                    android:padding="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@android:color/transparent"
+                android:focusable="true"
+                android:focusableInTouchMode="true"></LinearLayout>
+            <LinearLayout
+                android:id="@+id/li_billingaddressdetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/card_background"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="@string/BILLINGDETAILS"
+                    android:textColor="@color/colorHint"
+                    android:textStyle="bold" />
+
+                <include
+                    layout="@layout/activity_product_shippingaddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"/>
+
+                <Button
+                    android:id="@+id/btn_signup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="right"
+                    android:layout_margin="0dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="0dp"
+                    android:text="@string/btn_sign_up"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/li_ordersummary"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/ORDERSUMMARY"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/txv_ordersummarydown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:drawableLeft="@android:drawable/arrow_down_float"
+                    android:padding="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txv_ordersummaryup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:drawableLeft="@android:drawable/arrow_up_float"
+                    android:padding="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout   android:id="@+id/li_ordersummarydetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:padding="5dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    >
+                    <ListView
+                        android:id="@+id/listView"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                      >
+                    </ListView>
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/orderconfirmation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="hh"
+                android:textColor="@color/colorHint"
+                android:layout_weight="1"
+                />
+                <Button
+                    android:id="@+id/btn_update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:padding="2dp"
+                    android:text="Update Order"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="10sp"
+                    android:textColor="@color/white"
+                    android:background="@color/colorPrimary"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    <!--<ScrollView-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:visibility="gone"-->
+        <!--&gt;-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/li_paymentoption"-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="5dp"-->
+            <!--&gt;-->
+             <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@color/colorPrimary"-->
+                <!--android:layout_marginTop="0dp"-->
+                <!--android:padding="5dp"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:text="@string/PAYMENTOPTIONS"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:layout_weight="1"/>-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/txv_paymentoptiondown"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textSize="20sp"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:drawableLeft="@android:drawable/arrow_down_float"/>-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/txv_paymentoptionup"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textSize="20sp"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:visibility="gone"-->
+                    <!--android:drawableLeft="@android:drawable/arrow_up_float"/>-->
+            <!--</LinearLayout>-->
+
+
+            <!--<RadioGroup-->
+                <!--android:id="@+id/rbt_stausGroup"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_gravity="center_horizontal">-->
+
+                <!--<RadioButton-->
+                    <!--android:id="@+id/radioButton1"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:text="@string/rbt_payonline"-->
+                    <!--android:checked="true"/>-->
+
+                <!--<RadioButton-->
+                    <!--android:id="@+id/radioButton2"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:text="@string/rbt_Bhim"-->
+                    <!--android:clickable="false"-->
+                    <!--android:visibility="gone"/>-->
+
+                <!--<RadioButton-->
+                    <!--android:id="@+id/radioButton3"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:text="@string/rbt_paytm"-->
+                    <!--android:clickable="false"-->
+                    <!--android:visibility="gone"/>-->
+
+                <!--<RadioButton-->
+                    <!--android:id="@+id/radioButton4"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:text="@string/rbl_Mobikwik"-->
+                    <!--android:clickable="false"-->
+                    <!--android:visibility="gone"-->
+                    <!--/>-->
+            <!--</RadioGroup>-->
+
+            <!--<Button-->
+                <!--android:id="@+id/btn_confirmorder"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:padding="2dp"-->
+                <!--android:text="ConFirm Order"-->
+                <!--android:layout_gravity="right"-->
+                <!--android:layout_margin="10dp"-->
+                <!--android:textSize="10sp"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:background="@color/colorPrimary"/>-->
+
+          <!--</LinearLayout>-->
+        <!--</ScrollView>-->
+ </LinearLayout>

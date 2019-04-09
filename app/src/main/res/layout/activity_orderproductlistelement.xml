@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+     <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:layout_margin="5dp"
+         app:cardCornerRadius="5dp"
+         app:cardElevation="2dp"
+         app:cardPreventCornerOverlap="false"
+         app:cardUseCompatPadding="true">
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:baselineAligned="false"
+             android:orientation="vertical"
+             android:padding="5dp"
+             android:weightSum="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/image_wishlist"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                   />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_item_desc"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="0dp">
+
+                <TextView
+                    android:id="@+id/txv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Denim Shirtdddddddddddddddddddd"
+                    android:textColor="@color/colorHint"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/qty"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:text="Price   "
+                        android:textColor="@color/colorHint"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txv_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_rupee_indian"
+                        android:text="Qty : "
+                        android:textSize="12sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/price"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:text="Subtotal  "
+                        android:textColor="@color/colorHint"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txv_subtotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_rupee_indian"
+                        android:text="Qty : "
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp">
+
+                    <LinearLayout
+                        android:id="@+id/Superimposelayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="visible"
+                        android:layout_marginRight="5dp">
+
+                        <TextView
+                            android:id="@+id/Superimpose"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Text/Logo "
+                            android:textColor="@color/colorHint"
+                            android:textSize="12sp" />
+
+                        <ImageView
+                            android:id="@+id/image_superimpose"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/ic_check_black_24dp"
+                            android:padding="1dp"
+                            android:layout_weight="1"
+                            android:scaleType="fitXY" />
+
+                        <TextView
+                            android:id="@+id/txv_superimposetext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="image"
+                            android:visibility="gone"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/txv_shippingaddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="View Shipping Address"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:textSize="12sp"
+                            android:textColor="@color/colorPrimary"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+             </LinearLayout>
+         </LinearLayout>
+             <LinearLayout
+                 android:id="@+id/li_Perishablecheck"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:gravity="center_vertical"
+                 android:orientation="vertical"
+                 android:visibility="visible"
+                 >
+                 <TextView
+                     android:id="@+id/Perishablecheck"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="5dp"
+                     android:text="Perishable / Non-Perishable"
+                     android:textColor="@color/colorHint"
+                     android:textSize="12sp"
+                     android:visibility="gone"/>
+
+                 <TextView
+                     android:id="@+id/txv_Perishablecheck"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="vgggggggggghhhhhhhhhhh"
+                     android:layout_margin="5dp"
+                     android:visibility="gone"/>
+
+                 <TextView
+                     android:id="@+id/txv_ActionStatus"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="0dp"
+                     android:textStyle="bold"
+                     android:text="Action Status"
+                     android:textColor="@color/colorHint"
+                     android:textSize="12sp" />
+
+                 <TextView
+                     android:id="@+id/txv_adminActionStatus"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="ssssss"
+                     android:textSize="12sp"
+                     android:textStyle="bold"
+                     android:layout_marginTop="2dp"/>
+             </LinearLayout>
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:background="@color/stay_color"
+                 android:layout_marginTop="2dp"
+                 >
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="1"
+                     android:background="@color/white"
+                     android:layout_marginLeft="1dp"
+                     android:layout_marginRight="1dp"
+                     android:layout_marginBottom="1dp"
+                     android:layout_marginTop="1dp"
+                     >
+                     <TextView
+                         android:id="@+id/txv_status"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:text="@string/status"
+                         android:textSize="12sp"
+                         android:textStyle="bold"
+                         android:padding="7dp"
+                         android:layout_gravity="center_vertical"
+                         android:gravity="center"
+                         android:textColor="@color/colorPrimary"
+                         />
+                 </LinearLayout>
+
+                 <LinearLayout
+                     android:id="@+id/li_Action"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="1"
+                     android:background="@color/white"
+                     android:layout_marginLeft="1dp"
+                     android:layout_marginRight="1dp"
+                     android:layout_marginBottom="1dp"
+                     android:layout_marginTop="1dp"
+                     >
+                 <TextView
+                     android:id="@+id/txv_Action"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:text="@string/Cancel"
+                     android:textStyle="bold"
+                     android:padding="7dp"
+                     android:textSize="12sp"
+                     android:layout_gravity="center_vertical"
+                     android:gravity="center"
+                     android:textColor="@color/colorPrimary"
+                     />
+                   </LinearLayout>
+
+                 <LinearLayout
+                     android:id="@+id/li_exchange"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:layout_weight="1"
+                     android:visibility="gone"
+                     android:layout_marginLeft="1dp"
+                     android:layout_marginRight="1dp"
+                     android:background="@color/white"
+                     android:layout_marginBottom="1dp"
+                     android:layout_marginTop="1dp"
+                     >
+                     <TextView
+                         android:id="@+id/txv_exchange"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:text="@string/exchange"
+                         android:textStyle="bold"
+                         android:padding="7dp"
+                         android:textSize="12sp"
+                         android:layout_gravity="center_vertical"
+                         android:gravity="center"
+                         android:textColor="@color/colorPrimary"
+                         />
+                 </LinearLayout>
+
+                 <LinearLayout
+                     android:id="@+id/li_bank"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="1"
+                     android:visibility="gone"
+                     android:layout_marginLeft="1dp"
+                     android:layout_marginRight="1dp"
+                     android:background="@color/white"
+                     android:layout_marginBottom="1dp"
+                     android:layout_marginTop="1dp"
+                     >
+                     <TextView
+                         android:id="@+id/txv_bank"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="Bank Transfer details"
+                         android:textStyle="bold"
+                         android:padding="7dp"
+                         android:textSize="12sp"
+                         android:gravity="center"
+                         android:textColor="@color/colorPrimary"
+                         />
+                 </LinearLayout>
+           </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
+

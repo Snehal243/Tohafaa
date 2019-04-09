@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "322794530474",
+    "project_id": "firebase-tohafaa"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:322794530474:android:d19d3086a9ebca6c",
+        "android_client_info": {
+          "package_name": "com.montek.tohafaa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "322794530474-p9bjjnp9n2s26cn45lun5cou7p60bj2l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.montek.tohafaa",
+            "certificate_hash": "42bdaf1e36671bca0df7c02bc0ab19c6581a7d48"
+          }
+        },
+        {
+          "client_id": "322794530474-g2ukcoguraute5tr4h2b6s7f1q88h5ru.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJodbNM_EHzg1aO59zUjsHUzAxgXV7Bxw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

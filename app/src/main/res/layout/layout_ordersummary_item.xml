@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            >
+      <ImageView
+               android:id="@+id/image_wishlist"
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:layout_weight="1"
+               android:layout_gravity="center_vertical"  />
+
+
+            <TextView
+                android:id="@+id/txv_totalprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/ic_rupee_indian"
+                android:text="1200"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+        <LinearLayout  android:id="@+id/layout_item_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp">
+            <TextView android:id="@+id/txv_name"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Denim Shirtdddddddddddddddddddd"
+                      android:textSize="14sp"
+                      android:textStyle="bold"/>
+
+              <TextView android:id="@+id/txv_price"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="1200"
+                      android:textSize="12sp"
+                      android:layout_marginTop="5dp"
+                      android:drawableLeft="@drawable/ic_rupee_indian"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/qtylayout"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/qty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Qty :  "
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/txv_qty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Qty : "
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    />
+
+
+            </LinearLayout>
+
+            <TextView android:id="@+id/txv_delivery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delivery by Fri,16 Mar 2018"
+                android:textSize="12sp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colorPrimary"
+                />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:layout_marginRight="4dp"
+                android:id="@+id/taptoopeninputlayout"
+                android:textColorHint="@color/colorHint"
+                android:textSize="15sp">
+
+            <TextView android:id="@+id/txv_open"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tap To fill Shipping address here"
+                android:textSize="12sp"
+                android:layout_marginTop="5dp"
+                android:textColor="#FF0000"
+                />
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:layout_weight="1"
+            >
+
+            <ImageView android:id="@+id/img_delete"
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:text="Remove"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="right"
+                android:src="@drawable/ic_delete_black_24dp"/>
+
+            <ImageView android:id="@+id/img_cart"
+                android:layout_width="25dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3dp"
+                android:src="@android:drawable/ic_menu_edit"/>
+
+        </LinearLayout>
+       </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <View android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/grey_light"/>
+</LinearLayout>
+

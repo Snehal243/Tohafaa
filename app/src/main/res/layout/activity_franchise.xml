@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Franchise Opportunities In India"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:padding="15dp"
+                android:textStyle="bold"
+                android:layout_weight="1"/>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1">
+                <ScrollView
+                    android:id="@+id/scrollbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="REQUEST A CALLBACK"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20sp" />
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/firstinputlayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:textColorHint="@color/colorHint"
+                        android:textSize="17sp">
+
+                        <EditText
+                            android:id="@+id/edtx_firstname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:hint="@string/name" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/emailinputlayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:textColorHint="@color/colorHint">
+
+                        <EditText
+                            android:id="@+id/edtx_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/Email"
+                            android:inputType="textEmailAddress" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/mobileinputlayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:textColorHint="@color/colorHint">
+
+                        <EditText
+                            android:id="@+id/edtx_mobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/Mobile"
+                            android:inputType="number"
+                            android:maxLength="10" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/address1inputlayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:textColorHint="@color/colorHint">
+
+                        <EditText
+                            android:id="@+id/edtx_addressline1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/address"
+                            android:inputType="text"
+                             />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/remarkinputlayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:textColorHint="@color/colorHint">
+
+                        <EditText
+                            android:id="@+id/edtx_remark"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/remark"
+                            android:inputType="text"
+                            />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+                </ScrollView>
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="10dp"
+                android:gravity="bottom"
+                >
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:text="@string/Submit"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"/>
+
+                <View
+                    android:id="@+id/line11"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#9E9E9E" />
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:text="@string/Cancel"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"/>
+
+        </LinearLayout>
+
+        </LinearLayout>

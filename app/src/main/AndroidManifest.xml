@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.montek.tohafaa">
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/tohafaa_logoo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/tohafaa_logoo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:fullBackupContent="@xml/backup_descriptor">
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+
+        <!--// <activity android:name="com.facebook.LoginActivity"/>-->
+        <activity android:name="com.facebook.FacebookActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+        <provider
+            android:authorities="com.facebook.app.FacebookContentProvider544590025915530"
+            android:name="com.facebook.FacebookContentProvider"
+            android:exported="true" />
+
+        <!--<activity android:name=".LoginActivity"-->
+            <!--android:screenOrientation="portrait"></activity>-->
+        <activity
+            android:name=".RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity_CheckoutPage"
+            android:screenOrientation="portrait" />
+        <activity android:name=".DashBordActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ProductDetails"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activity_WishList"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activity_CartList"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".TermsCondition"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".CheckoutConfirmation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".PayMentGateWay"
+            android:screenOrientation="portrait"/>
+        <!--<activity android:name=".ActivitySplash"-->
+            <!--android:screenOrientation="portrait"/>-->
+        <activity android:name=".Activity_Uploadimage"
+            android:theme="@style/Theme.AppCompat.Light.Dialog"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activity_OrdersList"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activity_OrdersDetails"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activity_WebViewofInvoice"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".TabFragments.DisplayItemsFragment"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".PDFViewActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ResetActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ResetPassword"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ProductReviews"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".CorporateClient"
+            android:screenOrientation="portrait"/>
+
+    </application>
+
+</manifest>
